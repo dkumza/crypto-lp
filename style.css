@@ -137,6 +137,7 @@ table {
 
 /* variables */
 :root {
+   --background-main: #1b004e;
    --text-main: #ffffff;
    --font-small: 17px;
 }
@@ -153,7 +154,7 @@ body {
 #main-container {
    padding: 0 135px;
    color: var(--text-main);
-   background: #1b004e;
+   background: var(--background-main);
    margin: 0 auto;
    background-image: url(images/header-img.svg);
 }
@@ -235,7 +236,7 @@ a {
    background: #eb5757;
 }
 
-/* top contex wrap */
+/* top context wrap */
 
 #top-context-wrap {
    /* border: 5px solid rgb(151, 151, 54); */
@@ -290,4 +291,50 @@ a {
    top: 624.59px;
    left: 710px;
    cursor: pointer;
+}
+
+/* market container */
+#market-container {
+   border: 3px solid red;
+   background: var(--background-main);
+   padding: 0 135px;
+
+   color: var(--text-main);
+}
+
+/* market title */
+#market-title {
+   margin-top: 95px;
+   border: 3px solid green;
+   color: var(--White, #fff);
+   font-size: 32px;
+   font-weight: 700;
+   text-align: center;
+}
+
+/* market wrap / grid */
+#market-wrap {
+   width: 1170.913px;
+   height: 554.708px;
+   border: 3px solid green;
+   margin-top: 60px;
+   margin-bottom: 111px;
+   display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   grid-template-rows: 43px;
+   grid-auto-rows: 1fr;
+}
+/* market grid cell */
+.market-cell {
+   border: 1px solid white;
+   /* grid: 1fr / 1fr; */
+}
+
+.title-cell {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   text-align: center;
+   /* height: 43px; */
 }
