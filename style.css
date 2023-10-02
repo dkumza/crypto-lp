@@ -135,6 +135,12 @@ table {
 /* CSS Starts Here */
 /*  */
 
+/* variables */
+:root {
+   --text-main: #ffffff;
+   --font-small: 17px;
+}
+
 body {
    font-family: "Poppins";
    margin: 0 auto;
@@ -146,7 +152,7 @@ body {
 
 #main-container {
    padding: 0 135px;
-   color: var(--White, #fff);
+   color: var(--text-main);
    background: #1b004e;
    margin: 0 auto;
    background-image: url(images/header-img.svg);
@@ -181,7 +187,7 @@ body {
 }
 
 .logo-text {
-   color: var(--White, #fff);
+   color: var(--text-main);
 
    font-size: 24px;
    font-style: normal;
@@ -200,8 +206,8 @@ body {
 a {
    text-decoration: none;
    color: black;
-   color: var(--White, #fff);
-   font-size: 17px;
+   color: var(--text-main);
+   font-size: var(--font-small);
    font-style: normal;
    font-weight: 400;
    /* line-height: 24px; 141.176% */
@@ -210,8 +216,8 @@ a {
 /* buttons */
 .btn-1,
 .btn-2 {
-   color: var(---White, #fff);
-   font-size: 17px;
+   color: var(--text-main);
+   font-size: var(--font-small);
    font-family: poppins;
    width: 152px;
    height: 47px;
@@ -269,8 +275,19 @@ a {
 /* sub text */
 .text {
    width: 500px;
-   color: var(--White, #fff);
-   font-size: 17px;
+   color: var(--text-main);
+   font-size: var(--font-small);
    font-weight: 400;
    line-height: 28px; /* 164.706% */
+}
+
+/* scroll btn icon */
+.scroll-btn {
+   background-image: url("icons/scroll-btn-icon.svg");
+   width: 20px;
+   height: 50px;
+   position: absolute;
+   top: 624.59px;
+   left: 710px;
+   cursor: pointer;
 }
