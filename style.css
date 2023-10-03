@@ -290,16 +290,15 @@ a {
 
 /* market container */
 #market-container {
-   /* border: 3px solid red; */
    background: var(--background-main);
    padding: 0 135px;
-
    color: var(--text-main);
 }
 
 /* market title */
 #market-title {
    padding-top: 95px;
+   padding-bottom: 60px;
    color: var(--White, #fff);
    font-size: 32px;
    font-weight: 700;
@@ -309,18 +308,22 @@ a {
 /* market wrap  */
 #market-wrap {
    width: 1170.913px;
-   height: 554.708px;
-   margin-top: 60px;
    padding-bottom: 111px;
 }
 
 /* table */
-#table {
-   height: 100%;
+table {
    width: 100%;
    text-align: center;
    border-top: 1px solid #bdbdbd;
    border-bottom: 1px solid #bdbdbd;
+}
+
+#table {
+}
+
+#table-head {
+   height: 43px;
 }
 
 th {
@@ -402,4 +405,12 @@ td {
    display: flex;
    justify-content: center;
    gap: 10px;
+}
+
+.green {
+   color: #1aff7c;
+}
+
+.red {
+   color: #ff1a1a;
 }
