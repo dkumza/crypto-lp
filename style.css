@@ -319,22 +319,8 @@ a {
    border: 3px solid green;
    margin-top: 60px;
    margin-bottom: 111px;
-   display: grid;
+   /* display: grid;
    grid-template-columns: repeat(8, 1fr);
    grid-template-rows: 43px;
-   grid-auto-rows: 1fr;
-}
-/* market grid cell */
-.market-cell {
-   border: 1px solid white;
-   /* grid: 1fr / 1fr; */
-}
-
-.title-cell {
-   display: inline-flex;
-   justify-content: center;
-   align-items: center;
-   cursor: pointer;
-   text-align: center;
-   /* height: 43px; */
+   grid-auto-rows: 1fr; */
 }
