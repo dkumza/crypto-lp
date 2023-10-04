@@ -138,7 +138,9 @@ table {
 /* variables */
 :root {
    --background-main: #1b004e;
+   --background-light: #fff6fb;
    --text-main: #ffffff;
+   --text-gray: #616161;
    --text-dark: #000000;
    --font-small: 17px;
 }
@@ -387,7 +389,8 @@ td {
 }
 
 .short {
-   color: #828282;
+   /* color: #828282; */
+   color: var(--text-gray);
    margin-left: 5px;
 }
 
@@ -400,7 +403,8 @@ td {
 }
 
 .volume > h3 {
-   color: #828282;
+   /* color: #828282; */
+   color: var(--text-gray);
    font-size: 11px;
    font-weight: 600;
    padding-top: 10px;
@@ -424,7 +428,7 @@ td {
 /* 3rd section */
 
 #third-container {
-   background: #fff6fb;
+   background: var(--background-light);
 }
 
 #small-wrap {
@@ -480,4 +484,59 @@ td {
    display: flex;
    justify-content: end;
    align-items: end;
+}
+
+/* 5th section css */
+
+#container-no5 {
+   background: var(--background-light);
+}
+
+#wrap-of-3 {
+   display: flex;
+   justify-content: center;
+   gap: 33px;
+}
+
+.card {
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0px 4px 0px rgba(203, 203, 203, 0.25);
+   margin-bottom: 110px;
+}
+
+#wrap-no1 {
+   width: 368px;
+}
+
+.card-txt {
+   display: flex;
+   flex-direction: column;
+   margin: 25px 19px;
+   color: var(--text-gray);
+}
+
+.card-info {
+   display: flex;
+   justify-content: space-between;
+   gap: 31px;
+}
+
+.txt-small {
+   font-size: 12px;
+   display: flex;
+
+   padding-top: 28.5px;
+}
+
+.card-txt > h3 {
+   color: var(--text-dark);
+   font-size: var(--font-small);
+   line-height: 24px;
+   font-weight: 500;
+   margin-bottom: 14px;
+}
+
+.card-txt > p {
+   line-height: 18px;
 }
