@@ -139,6 +139,7 @@ table {
 :root {
    --background-main: #1b004e;
    --text-main: #ffffff;
+   --text-dark: #000000;
    --font-small: 17px;
 }
 
@@ -295,14 +296,19 @@ a {
    color: var(--text-main);
 }
 
-/* market title */
-#market-title {
+/* section title */
+.section-title {
    padding-top: 95px;
    padding-bottom: 60px;
    color: var(--White, #fff);
    font-size: 32px;
    font-weight: 700;
    text-align: center;
+}
+
+/* dark title */
+.title-dark {
+   color: var(--text-dark);
 }
 
 /* market wrap  */
@@ -413,4 +419,24 @@ td {
 
 .red {
    color: #ff1a1a;
+}
+
+/* 3rd section */
+
+#small-wrap {
+   /* border: 3px solid red; */
+   display: flex;
+   justify-content: center;
+   gap: 140px;
+}
+
+.small-second > img {
+   margin-bottom: 45px;
+}
+
+.text-wrap-1 {
+   display: flex;
+   flex-direction: column;
+   gap: 29px;
+   margin-bottom: 108px;
 }
