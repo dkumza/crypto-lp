@@ -161,8 +161,6 @@ body {
 
 #top-container {
    height: 700px;
-   flex-shrink: 0;
-   /* background: #1b004e; */
 }
 
 #nav-wrap {
@@ -184,16 +182,12 @@ body {
    background-image: url("icons/crypto-main-icon.svg");
    width: 35.338px;
    height: 40px;
-   /* flex-shrink: 0; */
 }
 
 .logo-text {
    color: var(--text-main);
-
    font-size: 24px;
-   font-style: normal;
    font-weight: 700;
-   line-height: 24px; /* 100% */
 }
 
 #nav-bar {
@@ -209,7 +203,6 @@ a {
    color: black;
    color: var(--text-main);
    font-size: var(--font-small);
-   font-style: normal;
    font-weight: 400;
    /* line-height: 24px; 141.176% */
 }
@@ -220,8 +213,9 @@ a {
    color: var(--text-main);
    font-size: var(--font-small);
    font-family: poppins;
-   width: 152px;
-   height: 47px;
+   padding: 15px 30px;
+   /* width: 152px; */
+   /* height: 47px; */
    border-radius: 50px;
    border: 2px solid #eb5757;
    background-color: transparent;
@@ -229,10 +223,11 @@ a {
 
 .btn-1 {
    margin-top: 31px;
+   white-space: nowrap;
 }
 
 .btn-2 {
-   width: 191px;
+   /* width: 191px; */
    background: #eb5757;
 }
 
@@ -295,46 +290,127 @@ a {
 
 /* market container */
 #market-container {
-   border: 3px solid red;
    background: var(--background-main);
    padding: 0 135px;
-
    color: var(--text-main);
 }
 
 /* market title */
 #market-title {
-   margin-top: 95px;
-   border: 3px solid green;
+   padding-top: 95px;
+   padding-bottom: 60px;
    color: var(--White, #fff);
    font-size: 32px;
    font-weight: 700;
    text-align: center;
 }
 
-/* market wrap / grid */
+/* market wrap  */
 #market-wrap {
    width: 1170.913px;
-   height: 554.708px;
-   border: 3px solid green;
-   margin-top: 60px;
-   margin-bottom: 111px;
-   display: grid;
-   grid-template-columns: repeat(8, 1fr);
-   grid-template-rows: 43px;
-   grid-auto-rows: 1fr;
-}
-/* market grid cell */
-.market-cell {
-   border: 1px solid white;
-   /* grid: 1fr / 1fr; */
+   padding-bottom: 111px;
 }
 
-.title-cell {
-   display: inline-flex;
-   justify-content: center;
-   align-items: center;
-   cursor: pointer;
+/* table */
+table {
+   width: 100%;
    text-align: center;
-   /* height: 43px; */
+   border-top: 1px solid #bdbdbd;
+   border-bottom: 1px solid #bdbdbd;
+}
+
+#table {
+}
+
+#table-head {
+   height: 43px;
+}
+
+th {
+   vertical-align: middle;
+}
+
+.lines {
+   height: 85.27px;
+   border-top: 1px solid #bdbdbd;
+}
+
+td {
+   vertical-align: middle;
+}
+
+.left {
+   text-align: left;
+   padding-left: 30px;
+}
+
+.icon {
+   display: inline-flex;
+   gap: 10px;
+   vertical-align: middle;
+   justify-content: center;
+   width: 24px;
+   height: 24px;
+   margin-right: 10px;
+   background-repeat: no-repeat;
+}
+
+/* icons background */
+.icon-1 {
+   background: url("icons/crypto-icons/01-btc.png");
+}
+.icon-2 {
+   background: url("icons/crypto-icons/02-eth.png");
+}
+.icon-3 {
+   background: url("icons/crypto-icons/03-cardano.png");
+}
+.icon-4 {
+   background: url("icons/crypto-icons/04-tether.png");
+}
+.icon-5 {
+   background: url("icons/crypto-icons/05-avalanche.png");
+}
+.icon-6 {
+   background: url("icons/crypto-icons/06-algorand.png");
+}
+
+.middle {
+   width: 40px;
+   text-align: center;
+}
+
+.short {
+   color: #828282;
+   margin-left: 5px;
+}
+
+.star {
+   margin-right: 12px;
+}
+.star-wrap {
+   display: flex;
+   align-items: center;
+}
+
+.volume > h3 {
+   color: #828282;
+   font-size: 11px;
+   font-weight: 600;
+   padding-top: 10px;
+   padding-left: 60px;
+}
+
+.market-cap {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+}
+
+.green {
+   color: #1aff7c;
+}
+
+.red {
+   color: #ff1a1a;
 }

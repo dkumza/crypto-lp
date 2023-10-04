@@ -4,8 +4,10 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Crypto</title>
+
+      <!-- local css -->
       <link rel="stylesheet" href="style.css" />
-      <script src="script.js" defer></script>
+      <!-- <script src="script.js" defer></script> -->
    </head>
    <body>
       <!-- illustration 1 -->
@@ -63,9 +65,283 @@
 
       <!-- market update container -->
       <div id="market-container">
-         <div id="market-title">Today's Cryptocurrency Prices</div>
-         <!-- market place / currency prices -->
-         <div id="market-wrap"></div>
+         <div id="market-wrap">
+            <div id="market-title">Today's Cryptocurrency Prices</div>
+            <!-- market place / currency prices -->
+
+            <!-- table goes there: -->
+            <table id="table table-sort">
+               <!-- table header -->
+               <thead>
+                  <tr id="table-head">
+                     <th class="middle">
+                        <h1>#</h1>
+                     </th>
+                     <th>
+                        <h1 class="left">Name</h1>
+                     </th>
+                     <th>
+                        <h1>Price</h1>
+                     </th>
+                     <th>
+                        <h1>24h %</h1>
+                     </th>
+                     <th>
+                        <h1>7d %</h1>
+                     </th>
+                     <th>
+                        <div class="market-cap">
+                           <h1>Market Cap</h1>
+                           <img src="icons/info.png" alt="" />
+                        </div>
+                     </th>
+                     <th>
+                        <h1>Volume(24h)</h1>
+                     </th>
+                     <th>
+                        <h1>Last 7 Days</h1>
+                     </th>
+                  </tr>
+               </thead>
+               <!-- table body -->
+               <tbody>
+                  <!-- table data 1st line -->
+                  <tr class="lines">
+                     <td>
+                        <div class="star-wrap">
+                           <img src="icons/star.svg" alt="" class="star" />
+                           <h2>1</h2>
+                        </div>
+                     </td>
+                     <td class="left">
+                        <h2 class="name">
+                           <span class="icon icon-1"></span>
+                           Bitcoin
+                           <span class="short">BTC</span>
+                        </h2>
+                     </td>
+                     <td>
+                        <h2>$55,206.61</h2>
+                     </td>
+                     <td>
+                        <h2 class="green">+0.92%</h2>
+                     </td>
+                     <td>
+                        <h2 class="green">+15.86%</h2>
+                     </td>
+                     <td>
+                        <h2>$1,031,053,197,418</h2>
+                     </td>
+                     <td>
+                        <div class="volume">
+                           <h2>$68,976,007,433</h2>
+                           <h3>653,452 BTC</h3>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="graph">
+                           <img src="images/crypto/line-green.png" alt="" />
+                        </div>
+                     </td>
+                  </tr>
+                  <!-- table data 2nd line -->
+                  <tr class="lines">
+                     <td>
+                        <div class="star-wrap">
+                           <img src="icons/star.svg" alt="" class="star" />
+                           <h2>2</h2>
+                        </div>
+                     </td>
+                     <td class="left">
+                        <h2 class="name">
+                           <span class="icon icon-2"></span>
+                           Ethereum
+                           <span class="short">ETH</span>
+                        </h2>
+                     </td>
+                     <td>
+                        <h2>$3,616.61</h2>
+                     </td>
+                     <td>
+                        <h2 class="red">-0.62%</h2>
+                     </td>
+                     <td>
+                        <h2 class="green">+12.86%</h2>
+                     </td>
+                     <td>
+                        <h2>$831,053,197,418</h2>
+                     </td>
+                     <td>
+                        <div class="volume">
+                           <h2>$58,976,007,433</h2>
+                           <h3>553,452 BTC</h3>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="graph">
+                           <img src="images/crypto/line-green.png" alt="" />
+                        </div>
+                     </td>
+                  </tr>
+                  <!-- table data 3rd line -->
+                  <tr class="lines">
+                     <td>
+                        <div class="star-wrap">
+                           <img src="icons/star.svg" alt="" class="star" />
+                           <h2>3</h2>
+                        </div>
+                     </td>
+                     <td class="left">
+                        <h2 class="name">
+                           <span class="icon icon-3"></span>
+                           Cardano
+                           <span class="short">ADA</span>
+                        </h2>
+                     </td>
+                     <td>
+                        <h2>$5,100.36</h2>
+                     </td>
+                     <td>
+                        <h2 class="green">+1.92%</h2>
+                     </td>
+                     <td>
+                        <h2 class="red">-10.86%</h2>
+                     </td>
+                     <td>
+                        <h2>$531,053,197,418</h2>
+                     </td>
+                     <td>
+                        <div class="volume">
+                           <h2>$48,976,007,433</h2>
+                           <h3>453,452 BTC</h3>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="graph">
+                           <img src="images/crypto/line-red.png" alt="" />
+                        </div>
+                     </td>
+                  </tr>
+                  <!-- table data 4th line -->
+                  <tr class="lines">
+                     <td>
+                        <div class="star-wrap">
+                           <img src="icons/star.svg" alt="" class="star" />
+                           <h2>4</h2>
+                        </div>
+                     </td>
+                     <td class="left">
+                        <h2 class="name">
+                           <span class="icon icon-4"></span>
+                           Tether
+                           <span class="short">USDT</span>
+                        </h2>
+                     </td>
+                     <td>
+                        <h2>$3,120.00</h2>
+                     </td>
+                     <td>
+                        <h2 class="red">-0.42%</h2>
+                     </td>
+                     <td>
+                        <h2 class="green">+15.86%</h2>
+                     </td>
+                     <td>
+                        <h2>$1,031,053,197,418</h2>
+                     </td>
+                     <td>
+                        <div class="volume">
+                           <h2>$38,976,007,433</h2>
+                           <h3>353,452 BTC</h3>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="graph">
+                           <img src="images/crypto/line-green.png" alt="" />
+                        </div>
+                     </td>
+                  </tr>
+                  <!-- table data 5th line -->
+                  <tr class="lines">
+                     <td>
+                        <div class="star-wrap">
+                           <img src="icons/star.svg" alt="" class="star" />
+                           <h2>5</h2>
+                        </div>
+                     </td>
+                     <td class="left">
+                        <h2 class="name">
+                           <span class="icon icon-5"></span>
+                           Avalanche
+                           <span class="short">AVAX</span>
+                        </h2>
+                     </td>
+                     <td>
+                        <h2>$224,144.00</h2>
+                     </td>
+                     <td>
+                        <h2 class="red">-2.92%</h2>
+                     </td>
+                     <td>
+                        <h2 class="red">-1.86%</h2>
+                     </td>
+                     <td>
+                        <h2>$7,031,053,197,418</h2>
+                     </td>
+                     <td>
+                        <div class="volume">
+                           <h2>$28,976,007,433</h2>
+                           <h3>253,452 BTC</h3>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="graph">
+                           <img src="images/crypto/line-red.png" alt="" />
+                        </div>
+                     </td>
+                  </tr>
+                  <!-- table data 6th line -->
+                  <tr class="lines">
+                     <td>
+                        <div class="star-wrap">
+                           <img src="icons/star.svg" alt="" class="star" />
+                           <h2>6</h2>
+                        </div>
+                     </td>
+                     <td class="left">
+                        <h2 class="name">
+                           <span class="icon icon-6"></span>
+                           Algorand
+                           <span class="short">ALGO</span>
+                        </h2>
+                     </td>
+                     <td>
+                        <h2>$8.00</h2>
+                     </td>
+                     <td>
+                        <h2 class="green">+5.92%</h2>
+                     </td>
+                     <td>
+                        <h2 class="green">+10.86%</h2>
+                     </td>
+                     <td>
+                        <h2>$9,031,053,197,418</h2>
+                     </td>
+                     <td>
+                        <div class="volume">
+                           <h2>$18,976,007,433</h2>
+                           <h3>153,452 BTC</h3>
+                        </div>
+                     </td>
+                     <td>
+                        <div class="graph">
+                           <img src="images/crypto/line-green.png" alt="" />
+                        </div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
       </div>
    </body>
 </html>
