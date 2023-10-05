@@ -429,7 +429,10 @@ td {
 
 #third-container {
    background: var(--background-light);
+
 }
+
+
 
 #small-wrap {
    /* border: 3px solid red; */
@@ -449,12 +452,29 @@ td {
    margin-bottom: 108px;
 }
 
+.text-wrap-1 > h2 {
+   font-size: 24px;
+   font-weight: 600;
+}
+
 /* 4th container */
+#container-no4 {
+   position: relative;
+   top: 0;
+   left: 0;
+}
+
+#shape-no4 {
+   position: absolute;
+   top: 122px;
+   right: 121px;
+   z-index: 9;
+}
+
 #wrap-no4 {
    background: var(--background-main);
    padding: 110px 135px 102px 135px;
    display: flex;
-   /* justify-content: center; */
    align-items: center;
 }
 .section-left {
@@ -484,6 +504,7 @@ td {
    display: flex;
    justify-content: end;
    align-items: end;
+   z-index: 10;
 }
 
 /* 5th section css */
@@ -525,7 +546,7 @@ td {
 .txt-small {
    font-size: 12px;
    display: flex;
-
+   gap: 5px;
    padding-top: 28.5px;
 }
 
@@ -539,4 +560,55 @@ td {
 
 .card-txt > p {
    line-height: 18px;
+}
+/* section no6 */
+#container-no6 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: var(--background-main);
+   color: var(--text-main);
+   position: relative;
+   top: 0;
+   left: 0;
+}
+
+#email-input {
+   /* margin: 0 auto; */
+   border: 2px solid var(--background-light);
+   border-radius: 37px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 578px;
+   margin-top: 50px;
+   margin-bottom: 110px;
+}
+.email-put {
+   background: transparent;
+   color: var(--text-main);
+   border: none;
+   border: 37px;
+   width: 100%;
+   padding: 28px 0;
+   padding-left: 21px;
+   font-size: 15px;
+}
+
+::placeholder {
+   color: #fff;
+}
+:focus-visible{
+   outline: none;
+}
+
+.btn-sub {
+   margin: 6px 5px;
+}
+
+#shapes-of-no6 {
+   position: absolute;
+   margin-top: 43px;
+   
 }
