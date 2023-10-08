@@ -181,6 +181,10 @@ body {
    margin-top: 25.43px;
 }
 
+.hamb-menu {
+   display: none;
+}
+
 .logo {
    background-image: url("icons/crypto-main-icon.svg");
    width: 35.338px;
@@ -217,8 +221,6 @@ a {
    font-size: var(--font-small);
    font-family: poppins;
    padding: 15px 30px;
-   /* width: 152px; */
-   /* height: 47px; */
    border-radius: 50px;
    border: 2px solid #eb5757;
    background-color: transparent;
@@ -235,14 +237,12 @@ a {
 }
 
 .btn-2 {
-   /* width: 191px; */
    background: #eb5757;
 }
 
 /* top context wrap */
 
 #top-context-wrap {
-   /* border: 5px solid rgb(151, 151, 54); */
    display: flex;
 }
 
@@ -264,7 +264,6 @@ a {
    width: 614px;
    height: 474.32px;
    flex-shrink: 0;
-   /* border: 3px solid green; */
    flex: 1;
    background: url(icons/crypto-icon-big.svg);
 }
@@ -282,7 +281,7 @@ a {
    color: var(--text-main);
    font-size: var(--font-small);
    font-weight: 400;
-   line-height: 28px; /* 164.706% */
+   line-height: 28px;
 }
 
 /* scroll btn icon */
@@ -320,7 +319,7 @@ a {
 
 /* market wrap  */
 #market-wrap {
-   width: 1170.913px;
+   /* width: 1170.913px; */
    padding-bottom: 111px;
 }
 
@@ -408,7 +407,6 @@ td {
 }
 
 .volume > h3 {
-   /* color: #828282; */
    color: var(--text-gray);
    font-size: 11px;
    font-weight: 600;
@@ -437,7 +435,6 @@ td {
 }
 
 #small-wrap {
-   /* border: 3px solid red; */
    display: flex;
    justify-content: center;
    gap: 140px;
@@ -675,4 +672,167 @@ td {
 #social-icons > img:hover {
    background: #eb5757;
    border-radius: 10px;
+}
+
+/*  375 width*/
+
+@media screen and (max-width: 375px) {
+   /* reset */
+
+   * {
+      margin: 0;
+      padding: 0;
+   }
+   /* 1st section */
+
+   body {
+      /* width: 375px; */
+   }
+
+   #main-container {
+      padding: 42px 16px 0;
+      background-image: none;
+   }
+
+   #top-container {
+      height: auto;
+   }
+
+   #nav-bar {
+      display: none;
+   }
+
+   .scroll-btn {
+      display: none;
+   }
+
+   #logo-wrap {
+      margin: 0;
+   }
+
+   .logo-text {
+      font-size: 20px;
+   }
+
+   #nav-wrap {
+      /* display: flex; */
+      justify-content: space-between;
+   }
+
+   .btn-hide {
+      display: none;
+   }
+
+   .hamb-menu {
+      display: block;
+   }
+
+   /* top container */
+
+   #left-context-wrap {
+      text-align: center;
+   }
+
+   #right-context-wrap {
+      display: none;
+   }
+
+   .main-text {
+      width: auto;
+      font-size: 24px;
+      margin-top: 44px;
+      margin-bottom: 13px;
+   }
+
+   .text {
+      border: 3px solid red;
+      width: auto;
+      margin-bottom: 20px;
+   }
+
+   .btn-1 {
+      margin: 0;
+   }
+
+   /* 2nd section */
+
+   #market-container {
+      padding: 0;
+   }
+
+   #market-wrap {
+      padding: 0 16px;
+   }
+
+   #market-title {
+      padding-top: 50px;
+      padding-bottom: 30px;
+   }
+
+   .section-title {
+      font-size: 20px;
+      padding: 0;
+   }
+
+   /* table  */
+
+   table {
+      border: none;
+   }
+
+   thead > tr > th {
+      display: none;
+   }
+
+   thead > tr > th:nth-child(2) {
+      display: block;
+   }
+
+   thead > tr > th:nth-child(7) {
+      display: block;
+   }
+
+   #table-head {
+   }
+
+   tbody > tr > td {
+      display: none;
+   }
+
+   tbody > tr > td:nth-child(2) {
+      display: block;
+   }
+   tbody > tr > td:nth-child(7) {
+      display: block;
+   }
+
+   /* 3rd section  */
+   #small-wrap {
+      /* border: 3px solid red; */
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      gap: 50px;
+      padding-bottom: 50px;
+   }
+
+   .small-second {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+
+   .small-second > img {
+      margin-bottom: 30px;
+   }
+
+   .title-dark {
+      margin: 50px 0 30px;
+   }
+
+   .text-wrap-1 {
+      margin: 0;
+   }
 }
