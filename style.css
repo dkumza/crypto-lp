@@ -679,7 +679,7 @@ td {
 
 /*  375 width*/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
    /* reset */
 
    * {
@@ -689,7 +689,6 @@ td {
    /* 1st section */
 
    body {
-      width: 375px;
    }
 
    #main-container {
