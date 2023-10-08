@@ -2,4 +2,6 @@
 
 created with html and css
 <br>
-task provided by school - bit.lt
+included mobile version too
+<br>
+task provided by school - www.bit.lt
