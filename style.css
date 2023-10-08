@@ -677,17 +677,12 @@ td {
    border-radius: 10px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 375px) {
    /* reset */
-
-   * {
-      margin: 0;
-      padding: 0;
-   }
    /* 1st section */
 
    body {
-       width: 420px; 
+       width: 375px; 
    }
 
    #main-container {
