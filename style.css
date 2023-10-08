@@ -175,7 +175,6 @@ body {
 /* logo */
 #logo-wrap {
    display: flex;
-   /* justify-content: center; */
    align-items: center;
    gap: 1px;
    margin-top: 25.43px;
@@ -211,7 +210,6 @@ a {
    color: var(--text-main);
    font-size: var(--font-small);
    font-weight: 400;
-   /* line-height: 24px; 141.176% */
 }
 
 /* buttons */
@@ -248,7 +246,6 @@ a {
 
 /* left context wrap */
 #left-context-wrap {
-   /* border: 3px solid red; */
    flex: 1;
 }
 .illustration-1 {
@@ -319,7 +316,6 @@ a {
 
 /* market wrap  */
 #market-wrap {
-   /* width: 1170.913px; */
    padding-bottom: 111px;
 }
 
@@ -390,7 +386,6 @@ td {
 }
 
 .short {
-   /* color: #828282; */
    color: var(--text-gray);
    margin-left: 5px;
 }
@@ -656,7 +651,6 @@ td {
    border-top: 1px solid var(--text-gray);
    margin: 0 135px;
    padding: 36px 0 50px 0;
-   /* border: 3px solid red; */
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -679,11 +673,11 @@ td {
 
 @media (max-width: 375px) {
    /* reset */
-   
+
    /* 1st section */
 
    body {
-       width: 375px; 
+      width: 375px;
    }
 
    #main-container {
@@ -712,7 +706,6 @@ td {
    }
 
    #nav-wrap {
-      /* display: flex; */
       justify-content: space-between;
    }
 
@@ -742,7 +735,6 @@ td {
    }
 
    .text {
-      /* border: 3px solid red; */
       width: auto;
       margin-bottom: 20px;
    }
@@ -752,7 +744,6 @@ td {
    }
 
    /* 2nd section */
-
    #market-container {
       padding: 0;
    }
@@ -818,9 +809,7 @@ td {
 
    /* 3rd section  */
    #small-wrap {
-      /* border: 3px solid red; */
       flex-direction: column;
-      /* justify-content: center; */
       align-items: center;
       gap: 50px;
       padding-bottom: 50px;
@@ -848,8 +837,6 @@ td {
 
    /* container no4  */
 
-   /*  */
-
    #text-left,
    .section-left {
       text-align: center;
@@ -876,7 +863,6 @@ td {
    }
 
    #left-side-no4 {
-      /* border: 3px solid red; */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -893,7 +879,6 @@ td {
    }
 
    #btn-left > img {
-      /* border: 3px solid green; */
       height: 35px;
    }
 
@@ -904,7 +889,6 @@ td {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      /* margin: 0 12px; */
    }
 
    #wrap-of-3 {
@@ -915,10 +899,6 @@ td {
    .card {
       margin: 0;
       padding: 0;
-      /* width: auto; */
-      /* height: 207px;
-      width: 343px
-      ; */
    }
 
    .card-info {
@@ -940,7 +920,6 @@ td {
    }
 
    .card > img {
-      /* border: 1px solid red; */
       width: 343px;
    }
 
